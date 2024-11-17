@@ -1,19 +1,6 @@
 # Jingtian Dang
 I am a 1st-year Ph.D. student at Georgia Tech, advised by  Prof. Tushar Krishna. My research interests are in computer architecture, with a focus on designing efficient and reliable hardware accelerators for specific applications.
-<div style="display: flex; align-items: center;">
-  <!-- Profile Picture -->
-  <img src="./figures/ehad2.jpg" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; margin-right: 20px;">
-
-  <!-- Text Content -->
-  <div>
-    <h1>Jingtian Dang</h1>
-    <p>
-      I am a Ph.D. student at Georgia Institute of Technology, specializing in Electrical and Computer Engineering.
-      My research interests include VLSI, hardware accelerators, and machine learning systems. I have hands-on
-      experience in designing efficient architectures and collaborating on impactful projects.
-    </p>
-  </div>
-</div>
+![image](./figures/ehad2.jpg)
 
 📧 [dangjingtian@gatech.edu](mailto:dangjingtian@gatech.edu)  
 ---
