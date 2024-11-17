@@ -1,9 +1,6 @@
 # Jingtian Dang
 
-📞 (540) 998-5528  
 📧 [dangjingtian@gmail.com](mailto:dangjingtian@gmail.com)  
-🌍 Non-US Citizen | Temporary (F1)
-
 ---
 
 ## Education
@@ -16,25 +13,14 @@ Expected Graduation: 2029
 ### Carnegie Mellon University, Pittsburgh, PA
 **M.S. in Electrical and Computer Engineering**  
 _January 2023 – December 2023_  
-**GPA**: 3.96  
 
 ### Georgia Institute of Technology, Atlanta, GA
 **B.S. in Computer Engineering**  
 _January 2021 – December 2022_  
-**GPA**: 4.00  
-
+ 
 ### Virginia Tech, Blacksburg, VA
 Transfer with 57 Credit Hours  
 _August 2019 – December 2020_  
-**GPA**: 4.00  
-
----
-
-## Skills
-
-- **Programming**: C/C++, Python, Verilog/SystemVerilog, Java  
-- **Hardware**: FPGA, Oscilloscope, Arduino  
-- **Software**: Visual Studio Code, Quartus, Vivado, Vitis HLS, Cadence, GitHub  
 
 ---
 
@@ -44,14 +30,11 @@ _August 2019 – December 2020_
 **Intern Member of Technical Staff in Silicon**  
 _May 2023 – August 2023_
 
-- Implemented power management unit simulator in C and verified correctness.  
-- Conducted formal verification for the unit using Jasper C2RTL, identifying 3 logic bugs.
-
 ---
 
 ## Publications
 
-- **ReLU-FHE**: Low-cost Accurate ReLU Polynomial Approximation in Fully Homomorphic Encryption Based ML Inference  
+- **ReLU-FHE**: Low-cost Accurate ReLU Polynomial Approximation in Fully Homomorphic Encryption-Based ML Inference  
   _The 3rd On-Device Intelligence Workshop @ MLSys'23_  
 
 - **SmartPAF**: Accurate Low-Degree Polynomial Approximation of Non-Polynomial Operators for Fast Private Inference in Homomorphic Encryption  
@@ -61,42 +44,49 @@ _May 2023 – August 2023_
 
 ## Projects and Research
 
-### **Architecture Simulators**  
-_February – April 2022_
+### architecture simulators (february-april 2022)  
+**advanced/high performance computer architecture course**  
+**personal course projects**  
+- designed a cache system simulator with L1, L2, and victim cache, a tage branch predictor simulator, a tomasulo simulator, and a mosi cache coherence simulator by c++.  
+- found the proper configurations of the simulators for different benchmarks to get high performance.  
 
-- Designed a cache system simulator with L1, L2, victim cache, TAGE branch predictor, Tomasulo simulator, and MOSI cache coherence simulator in C++.  
-- Configured simulators for high-performance benchmarks.
+### risc-v 5-stage pipelined processor (february-april 2022)  
+**processor design course**  
+**team-based projects with 2 members**  
+- designed a 5-stage pipelined processor supporting tiny risc-v by verilog.  
+- optimized the processor with a g-share branch predictor, a branch target buffer, and a return address stack.  
+- synthesized the design on vivado and tested on pynq-z2 fpga cloud cluster by python.  
 
-### **RISC-V 5-Stage Pipelined Processor**  
-_February – April 2022_
+### sram design (october-december 2022)  
+**advanced vlsi systems course**  
+**team-based project with 3 members**  
+- designed sram array reading and writing peripheral schematic and passed drc and lvs.  
+- solved the problem of the row and column decoder synchronizing with clock signal.  
+- tested the functionality and measured the performance of the sram system, which can run in 0.8 v and 1 ghz.  
 
-- Designed a 5-stage pipelined processor in Verilog, adding optimizations like branch predictors.  
-- Synthesized the design and tested on FPGA cloud clusters.
+### modern computer architecture & design course labs (september-october 2023)  
+**team-based labs with 2 members**  
+- created a bespoke branch predictor (bp) within gem5 by integrating local history bp, tage bp, and perceptron bp.  
+- demonstrated a remarkable 1.19x speedup over the baseline across four benchmarks on average, establishing it as the top-performing custom branch predictor in the course.  
+- implemented a 4-way issue queue, register renaming, and reorder buffer in verilog.  
 
-### **SRAM Design**  
-_October – December 2022_
+### reconfigurable logic: technology, architecture, and applications course labs and projects (october-december 2023)  
+**team-based labs or project with 3 members**  
+- optimized two convolution layers using hls and achieved 4.5 gigaop/s, resulting in a 15x speedup compared to the baseline on the fpga ultra96, ranking third in the course. the exploration involved memory layout, tiling size, and loop order to enhance bandwidth and parallelism.  
+- designed an accelerator for the simplex algorithm using hls on fpga ultra96, achieving a 150x speedup compared to software. explored the impact of tiling size and shape on performance and hardware overhead.  
 
-- Designed SRAM array schematics, passing DRC and LVS tests.  
-- Resolved timing synchronization between row and column decoders.  
+### digital systems testing and testable design course projects (september-december 2023)  
+**team-based labs or project with 2 members**  
+- implemented a fault collapser for an ssl atpg system and a d-algorithm simulator in python. developed an ssl and bridge fault simulator based on deductive fault simulation algorithms.  
+- utilized ssl fault simulator tools to diagnose bridge faults using provided testers, creating a script to automatically generate potential bridge faults in python.  
+- implemented design for testability for isacs89 benchmark sequential circuit s9234 by employing a multiple-channel scan chain, achieving a fault coverage of 93.5% with reasonable time and hardware overhead. the design earned the first-place award judged by qualcomm.  
 
-### **Modern Computer Architecture & Design Labs**  
-_September – October 2023_
-
-- Created a custom branch predictor in Gem5, achieving 1.19x speedup across benchmarks.  
-- Implemented pipeline components in Verilog.
-
-### **Reconfigurable Logic Course Projects**  
-_October – December 2023_
-
-- Optimized convolution layers using HLS for FPGA Ultra96, achieving a 15x speedup.  
-- Designed an accelerator for the SIMPLEX algorithm with 150x speedup over software.
-
-### **Digital Systems Testing Projects**  
-_September – December 2023_
-
-- Developed fault collapser, D-algorithm simulator, and fault simulation tools in Python.  
-- Achieved 93.5% fault coverage for ISACS89 benchmark circuit, awarded first place by Qualcomm.
-
+### fully homomorphic encryption (fhe) hardware accelerator (january 2022 - present)  
+**major researcher**  
+- built the bfv scheme in the fhe library with support for encryption, decryption, addition, multiplication, and relinearization, utilizing residue number system and number theoretic transform optimizations in c++.  
+- acquired comprehension of bgv, bfv, and ckks schemes alongside their base ring learning with errors (rlwe) cryptographic algorithms.  
+- conducted performance measurements and comparisons of the current he software library, such as microsoft seal and openfhe.  
+- developed a simulator to evaluate the performance and memory overhead of various ring-based polynomial algorithms. implemented schoolbook, ntt, and karatsuba ring-based polynomial multiplication using sycl hls, assessing their latency and overhead through synthesis results.  
 ---
 
 ## Awards
